@@ -47,18 +47,16 @@ class TestTablas {
 
 	private static Stream<Arguments> gira() {
 
-		int[][] matriz1 = { { 1 } };
-		int[][] matriz2 = { { 1, 2 }, { 3, 4 } };
-		int[][] matriz3 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		int[][] matriz1Esperada = { { 1 } };
-		int[][] matriz2Esperada = { { 3, 1 }, { 4, 2 } };
-		int[][] matriz3Esperada = { { 7, 4, 1 }, { 8, 5, 2 }, { 9, 6, 3 } };
+		
+		int[][] matriz1 = { { 1, 2 }, { 3, 4 }, {5, 6} };
+		int[][] matriz2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		int[][] matriz2Esperada = { { 7, 4, 1 }, { 8, 5, 2 }, { 9, 6, 3 } };
 
 		return Stream.of(
 
-				Arguments.of(matriz1, matriz1Esperada),
-				Arguments.of(matriz2, matriz2Esperada),
-				Arguments.of(matriz3, matriz3Esperada)
+				Arguments.of(null, null),
+				Arguments.of(matriz1, null),
+				Arguments.of(matriz2, matriz2Esperada)
 		);
 
 	}

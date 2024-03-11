@@ -28,10 +28,9 @@ class Tests {
 
 		return Stream.of(
 
-				Arguments.of("Hola, buenos días", 2), 
+				Arguments.of("", 0), 
 				Arguments.of("Buenas", 0), 
-				Arguments.of("T", 0),
-				Arguments.of("", 0)
+				Arguments.of("Buenos dias", 1)
 
 		);
 

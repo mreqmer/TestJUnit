@@ -29,9 +29,10 @@ class TestNumeros {
 
 		return Stream.of(
 				
+				Arguments.of(1, false),
 				Arguments.of(2, true),
-				Arguments.of(4, false),
-				Arguments.of(7, true)
+				Arguments.of(7, true),
+				Arguments.of(8, false)
 
 		);
 
@@ -52,9 +53,10 @@ class TestNumeros {
 
 		return Stream.of(
 				
-				Arguments.of(1221, true),
-				Arguments.of(1222, false),
-				Arguments.of(7, true)
+				Arguments.of(0, true),
+				Arguments.of(-1, false),
+				Arguments.of(7, true),
+				Arguments.of(1221, true)
 
 		);
 
